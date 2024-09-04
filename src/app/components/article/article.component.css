@@ -1,0 +1,152 @@
+/* Make sure .row and .col-md-4 are block elements */
+.row {
+    display: block;
+}
+
+.col-md-4 {
+    display: block;
+    margin-bottom: 20px; /* Space between articles */
+}
+
+/* Additional styling */
+.participate-wrap {
+	border-bottom: 1px solid #c0bdbddd; /* Adjust color and thickness as needed */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.participate-wrap figure {
+    overflow: hidden;
+    position: relative;
+}
+
+.participate-wrap figure::before {
+    background-color: #9398bb;
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+.participate-wrap figure figcaption {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    margin-top: -20px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.participate-wrap figure figcaption .global-radius {
+    background: #ffffff;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+}
+
+.participate-wrap:hover figure::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.participate-wrap:hover figure figcaption {
+    top: 50%;
+    opacity: 1;
+}
+
+.event_dit {
+    margin-top: 20px;
+}
+
+.event_dit ul {
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.event_dit ul li {
+    margin-right: 15px; /* Adjust spacing if needed */
+}
+
+.event_dit ul li a {
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.event_dit ul li a:hover {
+    color: #9398bb;
+}
+
+/* Section Title */
+.section-title {
+    display: block;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.section-title p {
+    color: #999;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    margin: 0;
+}
+
+.section-title h3 {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 62px;
+    margin: 0 0 25px;
+    padding: 0;
+    text-transform: none;
+}
+
+/* Button Hover */
+.btn-light:hover,
+.btn-light:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #100541;
+}
+
+
+@media (max-width: 576px) {
+    .participate-wrap {
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .event_dit {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.participate-wrap {
+    position: relative;
+}
+
+.full-width {
+    width: 100vw; /* Full viewport width */
+    margin-left: calc(-50vw + 50%); /* Align to the left edge */
+    padding: 10px 20px; /* Optional: Add some padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+

@@ -1,0 +1,21 @@
+<!-- about section start -->
+<div class="about_section layout_padding margin_top90 font "  style="margin-bottom: 90px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about_img"><img src="assets/images/about-img.png" /></div>
+      </div>
+      <div class="col-md-6 ">
+        <div class="about_text_main" [ngClass]="directionService.getDirection()">
+          <h1 class="about_taital font">{{ "about.title" | translate }}</h1>
+          <p class="about_text font">
+            {{'about.body2' | translate}} <br><br>
+            {{'about.body3' | translate}} <br><br>
+            {{'about.body4' | translate}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- about section end -->

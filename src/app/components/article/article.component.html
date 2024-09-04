@@ -1,0 +1,61 @@
+
+
+
+<div id="event"  class="layout_padding" [ngClass]="directionService.getDirection()">
+    <div class="container">
+        <div class="section-title text-center ">
+            <h1 class="studies_taital"  style="margin-top: 40px;">مقالاتنا</h1>
+            <p class="lead"></p>
+        </div><!-- end title -->
+
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <div class="participate-wrap">
+                    
+                    
+                    <!-- <div class="event_dit" *ngFor="let item of articles">
+                        <h4>{{'article.title' | translate }}</h4>
+                        <ul>
+                            <li> <a href="#"> <i class="fa fa-calendar"></i> {{item.postDate| date: 'yyyy-MM-dd'}} </a> </li>
+                        </ul>
+                        <p>{{'article.des'}}</p>
+                        <a href="event-detail.html" class="btn btn-light btn-radius btn-brd grd1">تفاصيل</a>
+                    </div> -->
+      <ng-container *ngIf="translate.currentLang === 'ar'; else templateEnglish">
+        <div class="event_dit" *ngFor="let item of articles">
+            <h4>{{ item.titleInArabic }}</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-calendar"></i> {{ item.postDate | date: 'yyyy-MM-dd' }}
+                </a>
+              </li>
+            </ul>
+            <p>{{ item.descriptionInArabic }}</p>
+            <a href="event-detail.html" class="btn btn-light btn-radius btn-brd grd1">تفاصيل</a>
+        </div>
+      </ng-container>
+      <ng-template #templateEnglish>
+        <div class="event_dit" *ngFor="let item of articles">
+            <h4>{{ item.titleInEnglish }}</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-calendar"></i> {{ item.postDate | date: 'yyyy-MM-dd' }}
+                </a>
+              </li>
+            </ul>
+            <p>{{ item.descriptionInEnglish }}</p>
+            <a href="event-detail.html" class="btn btn-light btn-radius btn-brd grd1">تفاصيل</a>
+        </div>
+      </ng-template>
+                    
+                </div><!-- end participate -->
+            </div><!-- end col -->
+
+  
+
+          
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div>

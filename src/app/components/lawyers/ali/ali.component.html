@@ -1,0 +1,77 @@
+<div class="carousel-item active">
+  <div class="customer_section_2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="box_main" style="margin-bottom:50px">
+            <div class="customer_main">
+              <div class="customer_left">
+                <div class="customer_img">
+                  <img src="assets/images/ali.png" />
+                </div>
+              </div>
+              <div class="customer_right" >
+                <h3 class="customer_name" style="padding-left: 30px" [ngClass]="directionService.getDirection()" >
+                 {{'persons.ali' | translate}}
+                  <span class="quick_icon" 
+                    ><img src="assets/images/quick-icon.png"
+                  /></span>
+                </h3>
+                <p class="enim_text" style="padding-left: 30px" [ngClass]="directionService.getDirection()">
+                  {{'persons.aliDefinition' | translate}}
+                </p>
+                <div
+                class="readmore_bt ml-4"
+                [ngClass]="directionService.getButtonAlignment()" data-toggle="modal" data-target="#exampleModal"
+              >
+                <a style="color: white;">{{ "persons.serv" | translate }}</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="column" id="main">
+          <h1>{{ "persons.serv" | translate }}</h1>
+          <!-- <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3> -->
+
+          <!-- <form [formGroup]="myClientForm" (ngSubmit)="onSubmitClient()" [ngClass]="directionService.getDirection()"> -->
+            <form [formGroup]="myClientForm"  [ngClass]="directionService.getDirection()">
+
+            <div class="form-group">
+              <!-- <label for="exampleInputName">{{'contact.Name' |translate}}</label> -->
+              <input type="name" class="form-control" id="exampleInputName" placeholder="{{'contact.Name' |translate}}" formControlName="name">
+            </div>
+            <div class="form-group">
+              <!-- <label for="exampleInputEmail1">{{'contact.email' |translate}} </label> -->
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="{{'contact.email' |translate}}" formControlName="email">
+            </div>
+            <div class="form-group">
+              <!-- <label for="exampleInputPassword1">{{'contact.phone' |translate}} </label> -->
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="{{'contact.phone' |translate}}" formControlName="phoneNumber">
+            </div>
+
+            <div class="form-group">
+              <!-- <label for="exampleInputDes">{{'contact.message' |translate}}</label> -->
+              <input type="text" class="form-control" id="exampleInputDes"  placeholder="{{'contact.message' |translate}}" formControlName="description">
+            </div>
+
+            <button type="submit" class="btn btn-primary">{{'global.Book' |translate}}</button>
+          </form>
+        </div>
+   
+     
+      </div>
+    </div>
+  </div>
+</div>

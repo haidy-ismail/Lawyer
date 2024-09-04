@@ -1,0 +1,123 @@
+<div class="services_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="studies_taital" style="margin-top: 40px;">{{ "services.service" | translate }}</h1>
+      </div>
+    </div>
+  </div>
+  <div class="services_section_2">
+    <div id="main_slider" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+  
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-md-6" [ngClass]="directionService.getDirection()">
+                <div class="about_text_main">
+                  <!-- <h1 class="corporate_text">{{ "nav.about" | translate }}</h1> -->
+                  <p class="about_text " style="color:#001431; font-size: 25px;">
+                    {{ "services.body" | translate }}<br><br>
+                    {{ "services.body2" | translate }}<br><br>
+                    {{ "services.body3" | translate }}
+                  </p>
+                  <div
+                    class="readmore_bt"
+                    [ngClass]="directionService.getButtonAlignment()"
+                  >
+                    <a routerLink="/Companies">{{ "cover.read" | translate }}</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <div class="about_img"><img src="assets/images/rechtsschutz.png" /></div>
+              </div>
+          
+            
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-md-6" [ngClass]="directionService.getDirection()">
+                <div class="about_text_main">
+                  <!-- <h1 class="corporate_text">{{ "nav.about" | translate }}</h1> -->
+                  <p class="corporate_text">
+                    {{ "services.body" | translate }}<br><br>
+                    {{ "services.body2" | translate }}<br><br>
+                    {{ "services.body3" | translate }}
+                  </p>
+                  <div
+                    class="readmore_bt"
+                    [ngClass]="directionService.getButtonAlignment()"
+                  >
+                    <a routerLink="about">{{ "cover.read" | translate }}</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <div class="about_img"><img src="assets/images/rechtsschutz.png" /></div>
+              </div>
+          
+            
+            </div>
+          </div>
+        </div>
+  
+        <div class="carousel-item ">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-md-6" [ngClass]="directionService.getDirection()">
+                <div class="about_text_main">
+                  <!-- <h1 class="corporate_text">{{ "nav.about" | translate }}</h1> -->
+                  <p class="corporate_text">
+                    {{ "services.body" | translate }}<br><br>
+                    {{ "services.body2" | translate }}<br><br>
+                    {{ "services.body3" | translate }}
+                  </p>
+                  <div
+                    class="readmore_bt"
+                    [ngClass]="directionService.getButtonAlignment()"
+                  >
+                    <a routerLink="about">{{ "cover.read" | translate }}</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <div class="about_img"><img src="assets/images/rechtsschutz.png" /></div>
+              </div>
+          
+            
+            </div>
+          </div>
+        </div>
+  
+  
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#main_slider"
+        role="button"
+        data-slide="prev"
+      >
+        <i class="fa fa-arrow-left"></i>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#main_slider"
+        role="button"
+        data-slide="next"
+      >
+        <i class="fa fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+  </div>
+  

@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "what": "WHAT WE DO",
+    "blog": "BOOKS",
+    "contact": "CONTACT US"
+  },
+  "cover": {
+    "read": "Read More",
+    "body":"We provide you with all legal services"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "",
+    "body": "",
+    "body2": "\"Amiri Advocates and Legal Consultants\" was established in Dubai in 2012 to practice law and legal consultancy in the United Arab Emirates and all its judicial and administrative institutions.",
+    "body3": "\"Amiri Advocates and Legal Consultants\" works in various legal fields: civil, commercial, banking, real estate, rental, administrative, labor, personal status, and criminal.",
+    "body4": "\"Amiri Advocates and Legal Consultants\" staff speaks Arabic, English, and Persian."
+  },
+  "persons": {
+    "ali": "Ali Amiri",
+    "ahmed": "Ahmed Amiri",
+    "team": "Team Members",
+    "ahmedDefinition": "An Emirati lawyer with a Bachelor's degree in Law, licensed to plead in all country courts at all levels. He began his career in the field of law in 1993, in the Dubai Public Prosecution and the Dubai Courts, until he founded the \"Amiri Advocates and Legal Consultants\" office in 2012.",
+    "description": "He has published several legal publications, including the book \"Penal Code Stories\" and the book \"Marriage with the Intent to Kill\", in addition to numerous legal articles published in local newspapers.",
+    "aliDefinition": "An Emirati lawyer with a Bachelor's degree in Law, licensed to plead in all courts of the country at all levels. He began his career in the field of law in 1984, as a director and partner in several law firms, until he founded \"Amiri Advocates and Legal Consultants\" office in 2012.",
+    "serv": "Book Now"
+  },
+  "services": {
+    "service": "Our Services",
+    "company": "Companies field",
+    "labor": "Labor Law",
+    "legal": "Legal Consultations",
+    "body":"\"Amiri Advocates and Legal Consultants\" provides a range of legal\nservices,",
+    "body2":"including providing legal advice, drafting legal contracts, ",
+    "body3":"legal representation for clients, following up on their cases, and fulfilling their rights."
+  },
+  "contact": {
+    "Name": "Name",
+    "phone": "Phone Number",
+    "email": "Your Email",
+    "message": "Message",
+    "send": "Send Now",
+    "description": "Inquiries"
+  },
+  "dashboard": {
+    "askes": "Inquiries",
+    "books": "Books",
+    "article": "Articles",
+    "client": "Clients",
+    "title": "Book title",
+    "des": "Arabic Description",
+    "author": "Author",
+    "ImageUrl": "Image Url",
+    "BookPdf": "Book PDF",
+    "titleAr2": "Article Title",
+    "PostDate": "Publish Date",
+    "save": "Save",
+    "addBook": "Add Book",
+    "addArticle": "Add Article",
+    "titleAr":"Arabic Title",
+    "titleEn":"English Title",
+    "desEn":"English Description"
+
+  },
+
+  
+  "global":{
+    "location":"Our Location",
+    "rights":"2024 All Rights Reserved",
+    "dash":"Dashboard",
+    "sideTitle":"Amiri",
+    "Book":"Book",
+    "time":"An Appointment",
+    "Get":"Get",
+    "consultation":"Free Consultation",
+    "read":"Read",
+    "article":"Our Articles",
+    "logout":"Logout"
+  },
+
+  "companyField":{
+    "p1":"Corporate Establishment and companies Regulations.",
+    "p2":"Construction Contracts.",
+    "p7":"Sale and Purchase Agreements.",
+    "p8":"Contractor and Consultant Agreements.",
+    "p13":"Legal Notices.",
+    "p14":"Legal Consultations."
+  },
+
+  "legal":{
+    "p1":"Criminal Cases (Misdemeanors, felonies, traffic accidents, immigration and residence).",
+    "p2":"Civil Suits (Compensation, Claims).",
+    "p3":"Commercial Suits.",
+    "p4":"Labor Suits",
+    "p5":"Personal Status (divorce, alimony, custody and inheritance).",
+    "p8":"Rental and real estate disputes.",
+    "p9":"Arbitration.",
+    "p10":"International Police Cases (Interpol)."
+
+  }
+}
